@@ -56,7 +56,7 @@ We believe that this problem is a **regression** problem as we want to derive a 
 
 
 
-We first thought of using `linear regression` to help predicting the life ladder. However, it is important to note that one tradeoff linear regression makes is that it assumes there is a direct correlation that the higher a certain value is the output is also linearly scaled. This may not be the case as values like GDP has shown increases past certain points does not in fact [grow happiness at the same rate.](https://www.pnas.org/content/107/38/16489)
+We first thought of using `linear regression` to help predicting the life ladder. However, it is important to note that one tradeoff linear regression makes is that it assumes a linear relationship between the features and outputs. This may not be the case as values like GDP has shown increases past certain points does not in fact [grow happiness at the same rate.](https://www.pnas.org/content/107/38/16489)
 
 
 
