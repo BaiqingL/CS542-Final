@@ -1,6 +1,6 @@
 ## CS 542 Team 8 Final Project Porposal
 
-*Baiqing (Andy) Lyu, Shengyao (Jax) Luo, Hanzi (Shirley) Yu*
+*Baiqing (Andy) Lyu, Shengyao (Jax) Luo, Hanzi (Shirley) Yu, Juncheng (Morgan) Zhang*
 
 
 
