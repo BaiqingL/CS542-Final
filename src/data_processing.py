@@ -28,4 +28,7 @@ for row in range(world_happiness_shape[0]):
         world_happiness_dict[current_country].append(value[1:])
     else:
         world_happiness_dict[current_country] = value
-print(np.isnan(world_happiness_dict.get("Bahrain")[14][6]))
+print(world_happiness_dict.get("Bahrain"))
+
+
+# [B, 1,2,3, [1,2,3]]
