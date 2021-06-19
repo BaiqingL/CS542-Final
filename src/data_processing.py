@@ -17,7 +17,7 @@ world_happiness_2021_shape = world_happiness_2021.shape
 # there are 373 null values in world_happiness and we currently find which country the null value belongs to 
 # and replace it with the mean of the column of that country.
 
-# Get a sample row from the dataset
+# 1. create a dictionary with keys of countries and values of their data:
 
 world_happiness_dict = defaultdict()
 for row in range(world_happiness_shape[0]):
@@ -28,4 +28,6 @@ for row in range(world_happiness_shape[0]):
         world_happiness_dict[current_country].append(value[1:])
     else:
         world_happiness_dict[current_country] = [value[1:]]
-print(world_happiness_dict.get("Bahrain"))
+
+# 2. find all "nan" value and replace it with the current mean of the column of the country:
+print(world_happiness_dict.keys())
