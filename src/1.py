@@ -16,21 +16,6 @@ world_happiness_2021_shape = world_happiness_2021.shape
 # and replace it with the mean of the column of that country.
 
 # Get a sample row from the dataset
-
-world_happiness_dict = {}
-for row in range(world_happiness_shape[0]):
-    value = world_happiness.loc[row].tolist()
-    print(value)
-    keys = world_happiness_dict.keys()
-    current_country = world_happiness.loc[row][0]
-    if (current_country in world_happiness_dict.keys()):
-        print(current_country)
-        world_happiness_dict[current_country] = world_happiness_dict.get(current_country).append(value)
-    else:
-        world_happiness_dict[world_happiness.loc[row][0]] = value
-print(world_happiness_dict.get("Afghanistan"))
-"""
-
 for element in world_happiness:
     i = 1
     country_array = []
@@ -38,6 +23,7 @@ for element in world_happiness:
     temp_data = []
     for country in world_happiness.iloc[0][1:]:
         print(country)
+        break
         if country not in country_array:
             country_array.append(country)
             country_data_array.append(temp_data)
@@ -47,6 +33,5 @@ for element in world_happiness:
         else:
             temp_data.append(world_happiness.loc[i])
             i+=1
-print(country_array)
+# print(country_array)
 
-"""
