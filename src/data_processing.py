@@ -30,4 +30,12 @@ for row in range(world_happiness_shape[0]):
         world_happiness_dict[current_country] = [value[1:]]
 
 # 2. find all "nan" value and replace it with the current mean of the column of the country:
-print(world_happiness_dict.keys())
+# traverse all the keys in the dictionary and for each country, 
+print("Before:",pd.DataFrame(world_happiness_dict.get("Algeria")))
+for country in world_happiness_dict.keys():
+    df = pd.DataFrame(world_happiness_dict.get(country))
+    for column in range (1,10) :
+        mean_value=df[column].mean()
+        df[column].fillna(value=mean_value, inplace=True)
+        world_happiness_dict[country] = df
+print("After:", world_happiness_dict.get("Algeria"))
