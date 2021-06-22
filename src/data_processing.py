@@ -6,6 +6,7 @@ from pandas import DataFrame
 from collections import defaultdict
 import sklearn as sk
 from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestRegressor
 
 world_happiness = pd.read_csv ('../data/world-happiness-report.csv')
 world_happiness_shape = world_happiness.shape
@@ -74,3 +75,13 @@ testing_data = pd.concat(testing_set)
 
 print("Training data dimensions: ", training_data.shape)
 print("Testing data dimensions: ", testing_data.shape)
+print(training_data)
+'''
+# Create a Random Forest Regressor object from Random Forest Regressor class:
+RFreg = RandomForestRegressor(n_estimators = 50, random_state = 0)
+x_train = training_data[2:]
+y_train = training_data[1]
+RFreg.fit(x_train, y_train)
+
+print(training_data)
+'''
