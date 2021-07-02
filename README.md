@@ -4,7 +4,7 @@
 
 For our term project, we will be using the **world happiness report 2021** dataset provided by Kaggle. [World Happiness Report 2021 | Kaggle](https://www.kaggle.com/ajaypalsinghlo/world-happiness-report-2021)
 
-Documentation for the code can be found in the code folder
+***Documentation for the code can be found in the code folder***
 
 #### Our goal:
 
